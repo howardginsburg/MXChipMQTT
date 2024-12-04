@@ -1,0 +1,1 @@
+int sendMQTTMessage(float* currentTemperature, float* currentHumidity, float* currentPressure);
