@@ -37,10 +37,14 @@ mqtt:
     - name: "Basement Temperature"
       state_topic: "mxchip/basement/sensors"
       suggested_display_precision: 1
+      state_class: measurement
+      device_class: temperature
       unit_of_measurement: "°F"
       value_template: "{{ value_json.temperature }}"
     - name: "Basement Humidity"
       state_topic: "mxchip/basement/sensors"
+      state_class: measurement
+      device_class: humidity
       unit_of_measurement: "%"
       value_template: "{{ value_json.humidity }}"
 ```
